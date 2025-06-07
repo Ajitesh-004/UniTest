@@ -11,7 +11,6 @@ UniTest is an intelligent question paper generator that leverages Natural Langua
 - AI-Powered Question Generation: Uses NLP models to generate meaningful and accurate questions.
 - Question Paper Blueprint: Visual representation of question distribution by difficulty and topic.
 - Topic-Based Filtering: Select specific units or chapters to tailor question papers.
-- Export Option: Download generated question papers in PDF format.
 - User-Friendly Interface: Clean, intuitive frontend for educators and admins.
 
 ---
@@ -25,8 +24,6 @@ UniTest is an intelligent question paper generator that leverages Natural Langua
 | NLP & AI      | NLTK (tokenization, stopwords), Google Generative AI (Gemini API) |
 | ML Model      | Gemini 2.0 Flash (via Generative AI) |
 | Database      | MySQL (for user accounts and progress tracking) |
-| File Handling | PyPDF2 (PDF parsing), `filedialog` (upload), Regex, JSON |
-| UI Utilities  | ttk (Themed Widgets), Messagebox |
 
 ---
 
@@ -48,23 +45,17 @@ Traditional question paper setting is time-consuming, prone to repetition, and o
 4. Classification: Each question is mapped to a Bloom’s Taxonomy level.
 5. Display: Questions are shown in a clean UI with options to answer, retry, or move to the next level.
 
----
-
-## Demo Video
-
-Watch the working demo of UniTest:  
-[Click here to view the demo](https://www.youtube.com/watch?v=YOUR_DEMO_LINK)
 
 ---
 
 ## Future Enhancements
 
 - User Authentication and Role-based Access  
-- Upload entire syllabus files (PDF/DOCX)  
+- Export Option: Download generated question papers in PDF format.
 - Question Bank with Filtering and Tags  
 - Multi-language support  
 - Integration with Retrieval-Augmented Generation (RAG)
-
+- ChatBot integration for better user experience 
 ---
 
 Star this repository if you found it helpful!
