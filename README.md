@@ -20,11 +20,13 @@ UniTest is an intelligent question paper generator that leverages Natural Langua
 
 | Layer        | Technologies Used |
 |--------------|-------------------|
-| AI/ML        | Python, Transformers, Bloom's Taxonomy Mapping, Hugging Face, NLTK |
-| Backend      | Flask, REST APIs |
-| Frontend     | HTML, CSS, JavaScript |
-| Database     | SQLite |
-| Libraries    | Scikit-learn, Pandas, NumPy, Matplotlib, Flask-CORS |
+| Language      | Python |
+| GUI Framework | Tkinter (for desktop interface), PIL (image handling) |
+| NLP & AI      | NLTK (tokenization, stopwords), Google Generative AI (Gemini API) |
+| ML Model      | Gemini 2.0 Flash (via Generative AI) |
+| Database      | MySQL (for user accounts and progress tracking) |
+| File Handling | PyPDF2 (PDF parsing), `filedialog` (upload), Regex, JSON |
+| UI Utilities  | ttk (Themed Widgets), Messagebox |
 
 ---
 
@@ -40,11 +42,11 @@ Traditional question paper setting is time-consuming, prone to repetition, and o
 
 ## How It Works
 
-1. Input Syllabus: User provides the unit/topic syllabus.
-2. Keyword Extraction: NLP extracts key concepts from input.
-3. Question Generation: AI model generates questions using pre-trained language models.
+1. Input Syllabus: User provides the unit/topic syllabus or uploads a document.
+2. Keyword Extraction: NLP extracts key concepts from the input.
+3. Question Generation: Gemini AI generates questions using contextual understanding.
 4. Classification: Each question is mapped to a Bloom’s Taxonomy level.
-5. Display: Questions are shown with options to edit, shuffle, and export.
+5. Display: Questions are shown in a clean UI with options to answer, retry, or move to the next level.
 
 ---
 
@@ -61,7 +63,7 @@ Watch the working demo of UniTest:
 - Upload entire syllabus files (PDF/DOCX)  
 - Question Bank with Filtering and Tags  
 - Multi-language support  
-- Integration with RAG (Retrieval-Augmented Generation)
+- Integration with Retrieval-Augmented Generation (RAG)
 
 ---
 
